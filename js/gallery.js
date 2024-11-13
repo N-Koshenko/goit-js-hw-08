@@ -95,7 +95,7 @@ gallery.addEventListener("click", imageClick);
 function imageClick(event) {
   event.preventDefault();
   
-  if (event.target === event.currentTarget) {
+  if (event.target.nodeName !== "IMG") {
      return;
   }  
   
